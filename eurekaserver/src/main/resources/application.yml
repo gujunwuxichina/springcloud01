@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: eurkaserver #表示一个标识，表示某个微服务的标识，如果有第二个节点也设为eurkaserver，Spring cloud会认为该微服务的另一个节点；
+server:
+  port: 7001
+
+eureka:
+  instance:
+    hostname: localhost #eureka注册服务器名称
+  client:
+    registerWithEureka: false #是否注册给服务中心，默认下项目会自动查找服务中心去注册，本项目本身就是服务治理中心，没必要再去注册；
+    fetchRegistry: false  #检索服务功能，由于本项目本身就是服务治理中心，也不需要该功能；
+    serviceUrl:
+      #服务中心的域，提供给别的微服务注册用；
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
