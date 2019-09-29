@@ -1,4 +1,4 @@
-package com.gujun.eurekaclient.controller;
+package com.gujun.eurekaclient01.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;

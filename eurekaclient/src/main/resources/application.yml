@@ -1,15 +1,15 @@
 spring:
   application:
-    #�Ժ�ķ��������֮���໥����һ�㶼�Ǹ������name
-    #��΢�������ƻ�ע����������ģ�����Ӧ�û���Ϊ����λSERVICE-CLIENT01�����һ���ڵ㣻
+    #以后的服务与服务之间相互调用一般都是根据这个name
+    #该微服务名称会注册给服务中心，而该应用会作为名称位SERVICE-CLIENT01服务的一个节点；
     name: service-client01
 
 server:
-  port: 8091
+  port: 8081
 
 eureka:
   client:
     serviceUrl:
-      #�����ͻ��˷�����
-      #�����˷�������һ���ĵ�ַ������ע�ᵽ֮ǰ�����õķ����������ģ�
+      #治理客户端服务域
+      #配置了服务中心一样的地址，就能注册到之前所配置的服务治理中心；
       defaultZone: http://localhost:7001/eureka/
