@@ -14,3 +14,8 @@ eureka:
       #配置了服务中心一样的地址，就能注册到之前所配置的服务治理中心；
       defaultZone: http://localhost:7001/eureka/
 
+#开启feign的自带断路器
+feign:
+  hystrix:
+    enabled: true
+
