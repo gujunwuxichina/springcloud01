@@ -6,7 +6,6 @@ import com.gujun.ribbonclient01.entity.User;
 import com.gujun.ribbonclient01.service.StudentService;
 import com.gujun.ribbonclient01.service.TokenService;
 import com.gujun.ribbonclient01.service.UserService;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -18,7 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
-
 
 @RequestMapping("student")
 @RestController
