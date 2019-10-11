@@ -32,7 +32,7 @@ public class StudentController {
     private TokenService tokenService;
 
     @Autowired
-    //DiscoveryClient对象是由SpringBoot自动创建的，可以获取该服务的id,服务主机，服务端口；H
+    //DiscoveryClient对象是由SpringBoot自动创建的，可以获取该服务的id,服务主机，服务端口；HH
     private DiscoveryClient discoveryClient;
 
     @GetMapping("/getAll")
